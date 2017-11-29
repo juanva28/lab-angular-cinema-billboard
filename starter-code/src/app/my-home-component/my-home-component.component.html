@@ -1,0 +1,11 @@
+<h1>Ironhack Movies</h1>
+
+<ul>
+  <li *ngFor="let peli of movies" class="movie">
+    <h3><li><a [routerLink]= "['movies', '1']"> ROOM {{peli.id}}</a></h3>
+    <p>{{peli.title}}</p>
+    <img src="{{peli.poster}}" width="200" height="250">
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

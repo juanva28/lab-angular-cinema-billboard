@@ -1,3 +1,14 @@
 <h1>
   {{title}}
 </h1>
+
+<ul>
+  <li><a [routerLink]="['home']">Home</a></li>
+  <li><a [routerLink]="['movies', '1']">Select Movie</a></li>
+  <li><a [routerLink]="['movies', '2']">Select Movie</a></li>
+  <li><a [routerLink]="['movies', '3']">Select Movie</a></li>
+  <li><a [routerLink]="['movies', '4']">Select Movie</a></li>
+  <li><a [routerLink]="['movies', '5']">Select Movie</a></li>
+</ul>
+
+<router-outlet></router-outlet>
